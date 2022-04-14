@@ -20,4 +20,4 @@ Rosel is a programming language that compiles to Luau, and is designed to add ne
 
 -----
 
-[Visit the Rosel documentation to learn more](https://ro-seau.github.io/Rosel)
+[Visit the Rosel documentation to learn more](https://roseau-corporation.github.io/Rosel)
