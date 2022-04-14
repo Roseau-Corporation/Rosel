@@ -1,0 +1,9 @@
+{
+  "name": "rosel",
+  "version": "1.0.0-alpha-1.0",
+  "description": "Rosel is a programming language that compiles to Luau, and is designed to add new features to the language with little complexity.",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Roseau-Corporation/Rosel",
+  "author": "Roseau Corporation",
+  "license": "GPL-3.0-only"
+}
