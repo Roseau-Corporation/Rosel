@@ -1,5 +1,5 @@
 import { expect } from "chai"
-import { FunctionDeclaration, Identifier, NodeType, Number, ReturnStatement, String, VariableDeclaration } from "../src"
+import { Comment, FunctionDeclaration, Identifier, NodeType, Number, ReturnStatement, String, VariableDeclaration } from "../src"
 
 describe("AST Programmatical Building", () => {
     it("Function Declaration", () => {
@@ -54,5 +54,13 @@ describe("AST Programmatical Building", () => {
 
         expect(ReturnAST.Values[0].Type).to.equal(NodeType.Number)
         expect(ReturnAST.Values[0].Value).to.equal(256)
+    })
+
+    it("Comment", () => {
+        const CommentMessage = "\n    Hello World!\n"
+        const CommentAST = new Comment(CommentMessage)
+
+        expect(CommentAST.Type).to.equal(NodeType.Comment)
+        expect(CommentAST.Value).to.equal(CommentMessage)
     })
 })
