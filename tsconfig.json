@@ -10,11 +10,15 @@
     "moduleResolution": "node",
     "outDir": "dist/",
     "strict": true,
+    "declaration": true,
     "target": "es5"
   },
   "include": [
-    "typings\\**\\*.d.ts",
-    "node_modules\\@*\\types-*\\*.d.ts",
     "src"
+  ],
+  "exclude": [
+    "./tests",
+    "./node_modules",
+    "./dist"
   ]
 }
