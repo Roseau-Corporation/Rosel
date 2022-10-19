@@ -5,4 +5,8 @@ node_modules/
 dist/
 
 # Log files
-.log
+*.log
+
+# Rosel debug files
+*.ast
+*.tokens
