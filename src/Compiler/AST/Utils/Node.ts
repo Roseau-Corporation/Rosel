@@ -6,7 +6,7 @@ export enum NodeType {
 
     String = "String",
     Number = "Number",
-    Table = "Table",
+    Array = "Array",
 
     Identifier = "Identifier",
     Comment = "Comment",

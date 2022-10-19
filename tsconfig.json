@@ -11,7 +11,7 @@
     "outDir": "dist/",
     "strict": true,
     "declaration": true,
-    "target": "es5",
+    "target": "ESNext",
     "resolveJsonModule": true
   },
   "include": [

@@ -1,11 +1,11 @@
 import { NodeType } from "../../Utils"
 import { Literal } from "./Literal"
 
-export class Table extends Literal {
-    public Type: NodeType = NodeType.Table
+export class Array extends Literal {
+    public Type: NodeType = NodeType.Array
 
     public constructor(
-        public Members: Literal[],
+        public Value: Literal[],
         Length = 0
     ) {
         super(Length)
