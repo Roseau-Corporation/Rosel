@@ -3,10 +3,10 @@ import { Literal } from "../Literals"
 
 export class Identifier extends Literal {
     public Type: NodeType = NodeType.Identifier
-    public Name: string
+    public Value: string
 
     constructor(Name: string, Length = 0) {
         super(Length)
-        this.Name = Name
+        this.Value = Name
     }
 }
