@@ -1,5 +1,6 @@
 export * from "./Lexer"
 export * from "./AST"
+export * as Luau from "./LuauAST"
 export * from "./Parser"
 export * from "./Transformer"
 export * from "./Renderer"
