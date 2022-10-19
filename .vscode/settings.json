@@ -2,6 +2,6 @@
     "files.associations": {
         "*.ast": "json",
         "*.tokens": "json",
-        "*.rose": "luau"
+        "*.rose": "plaintext"
     }
 }
