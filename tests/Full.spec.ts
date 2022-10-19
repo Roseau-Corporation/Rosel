@@ -21,16 +21,16 @@ describe("Full Compilation", () => {
         expect(ParsedAST[0]?.Type).to.equal(NodeType.VariableDeclaration)
         expect(ParsedAST[0]).to.instanceof(VariableDeclaration)
         if(!(ParsedAST[0] instanceof VariableDeclaration)) return
-        expect(ParsedAST[0].Names[0].Name).to.equal("My")
-        expect(ParsedAST[0].Names[1].Name).to.equal("Variable")
+        expect(ParsedAST[0].Names[0].Value).to.equal("My")
+        expect(ParsedAST[0].Names[1].Value).to.equal("Variable")
         expect(ParsedAST[0].Initializers[0].Value).to.equal("Hello")
         expect(ParsedAST[0].Initializers[1].Value).to.equal("World")
 
         expect(ParsedAST[1]?.Type).to.equal(NodeType.VariableDeclaration)
         expect(ParsedAST[1]).to.instanceof(VariableDeclaration)
         if(!(ParsedAST[1] instanceof VariableDeclaration)) return
-        expect(ParsedAST[1].Names[0].Name).to.equal("Your")
-        expect(ParsedAST[1].Names[1].Name).to.equal("Declaration")
+        expect(ParsedAST[1].Names[0].Value).to.equal("Your")
+        expect(ParsedAST[1].Names[1].Value).to.equal("Declaration")
         expect(ParsedAST[1].Initializers[0].Value).to.equal("Hey")
         expect(ParsedAST[1].Initializers[1].Value).to.equal("Programmer")
     })

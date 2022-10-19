@@ -15,14 +15,14 @@ describe("AST Programmatical Building", () => {
 
         expect(FunctionAST.Type).to.equal(NodeType.FunctionDeclaration)
         expect(FunctionAST.Name?.Type).to.equal(NodeType.Identifier)
-        expect(FunctionAST.Name?.Name).to.equal("MyFunction")
+        expect(FunctionAST.Name?.Value).to.equal("MyFunction")
         expect(FunctionAST.Local).to.equal(false)
 
         expect(FunctionAST.Parameters[0].Type).to.equal(NodeType.Identifier)
-        expect(FunctionAST.Parameters[0].Name).to.equal("Param1")
+        expect(FunctionAST.Parameters[0].Value).to.equal("Param1")
 
         expect(FunctionAST.Parameters[1].Type).to.equal(NodeType.Identifier)
-        expect(FunctionAST.Parameters[1].Name).to.equal("Param2")
+        expect(FunctionAST.Parameters[1].Value).to.equal("Param2")
 
         expect(FunctionAST.Body[0].Type).to.equal(NodeType.VariableDeclaration)
         expect(FunctionAST.Body[1].Type).to.equal(NodeType.ReturnStatement)
@@ -36,10 +36,10 @@ describe("AST Programmatical Building", () => {
         expect(VariableAST.Type).to.equal(NodeType.VariableDeclaration)
 
         expect(VariableAST.Names[0].Type).to.equal(NodeType.Identifier)
-        expect(VariableAST.Names[0].Name).to.equal("MyVariable1")
+        expect(VariableAST.Names[0].Value).to.equal("MyVariable1")
 
         expect(VariableAST.Names[1].Type).to.equal(NodeType.Identifier)
-        expect(VariableAST.Names[1].Name).to.equal("MyVariable2")
+        expect(VariableAST.Names[1].Value).to.equal("MyVariable2")
 
         expect(VariableAST.Initializers[0].Type).to.equal(NodeType.String)
         expect(VariableAST.Initializers[0].Value).to.equal("Hello World!")
