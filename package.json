@@ -2,7 +2,7 @@
   "name": "rosel",
   "version": "1.0.0-alpha-1.0",
   "description": "Rosel is a programming language that compiles to Luau, and is designed to add new features to the language with little complexity.",
-  "main": "./dist/index.js",
+  "main": "./dist/src/index.js",
   "repository": "https://github.com/Roseau-Corporation/Rosel",
   "author": "Roseau Corporation",
   "license": "GPL-3.0-only",
@@ -11,11 +11,11 @@
     "qc": "yarn lint && yarn test",
     "lint": "yarn eslint src",
     "test": "yarn mocha -r ts-node/register 'tests/**/*.ts'",
-    "build": "yarn tsc"
+    "build": "yarn tsc",
+    "rosel": "yarn ts-node ./src/CLI/index.ts",
+    "install-locally": "yarn tsc && npm remove -g rosel && npm install -g ."
   },
   "dependencies": {
-    "chalk": "^5.0.1",
-    "clear": "^0.1.0",
     "commander": "^9.4.0",
     "tokenizr": "^1.6.7"
   },
@@ -33,7 +33,7 @@
     "typescript": "^4.8.2"
   },
   "bin": {
-    "rosel": "./dist/CLI/index.js"
+    "rosel": "./dist/src/CLI/index.js"
   },
   "files": [
     "dist"
