@@ -6,6 +6,7 @@ import { Mutator } from "../../Mutator"
 type Constructor<T = any> = new (...args: any[]) => T
 
 export const ArrayMutator = new Mutator(Rosel.Array, (Node) => {
+    // TODO: Fix array mutator not mutating past array depth 1.
     return new Luau.Array(Node.Value.map((RoselLiteral) => {
         const Mappings: Partial<Record<NodeType, Constructor>> = {
             [NodeType.Array]: Luau.Array,
