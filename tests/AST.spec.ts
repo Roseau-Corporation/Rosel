@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "mocha"
 import { Comment, FunctionDeclaration, Identifier, NodeType, Number, ReturnStatement, String, VariableDeclaration } from "../src"
 
 describe("AST Programmatical Building", () => {

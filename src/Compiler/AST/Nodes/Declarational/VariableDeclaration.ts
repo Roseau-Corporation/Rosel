@@ -7,8 +7,8 @@ export class VariableDeclaration<InitializersType extends Literal[]> extends Nod
     public Names: Identifier[]
     public Initializers: InitializersType
 
-    constructor(Names: Identifier[], Initializers: InitializersType) {
-        super()
+    constructor(Names: Identifier[], Initializers: InitializersType, Length = 0) {
+        super(Length)
         this.Names = Names
         this.Initializers = Initializers
     }

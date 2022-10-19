@@ -3,10 +3,11 @@ import { Literal } from "./Literal"
 
 export class Number extends Literal {
     public Type: NodeType = NodeType.Number
-    public Value: number
 
-    constructor(Value: number) {
-        super()
-        this.Value = Value
+    public constructor(
+        public Value: number,
+        Length = 0
+    ) {
+        super(Length)
     }
 }

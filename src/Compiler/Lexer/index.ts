@@ -2,6 +2,7 @@ import _Tokenizer from "tokenizr"
 
 export const Tokenizer = new _Tokenizer()
 
+
 export enum TokenType {
     Identifier = "Identifier",
     Number = "Number",
@@ -35,6 +36,9 @@ export enum TokenType {
     ThenKeyword = "ThenKeyword",
     ElseKeyword = "ElseKeyword",
 
+    CurlyBracketOpen = "CurlyBracketOpen",
+    CurlyBracketClose = "CurlyBracketClose",
+
     FunctionKeyword = "FunctionKeyword",
     VariableKeyword = "VariableKeyword",
 
@@ -48,6 +52,7 @@ export enum TokenType {
     WhileKeyword = "WhileKeyword",
 
     Unknown = "Unknown",
+    EndOfFile = "EOF"
 }
 
 import("./Tokens")

@@ -9,8 +9,8 @@ export class FunctionDeclaration<BodyType extends Node[]> extends Literal {
     public Body: BodyType
     public Local: boolean
 
-    constructor(Parameters: Identifier[], Body: BodyType, Name?: Identifier, Local = false) {
-        super()
+    constructor(Parameters: Identifier[], Body: BodyType, Name?: Identifier, Local = false, Length = 0) {
+        super(Length)
         this.Name = Name
         this.Parameters = Parameters
         this.Body = Body

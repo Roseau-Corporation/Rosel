@@ -6,6 +6,7 @@ export enum NodeType {
 
     String = "String",
     Number = "Number",
+    Table = "Table",
 
     Identifier = "Identifier",
     Comment = "Comment",
@@ -15,4 +16,8 @@ export enum NodeType {
 
 export class Node {
     public Type!: NodeType
+
+    public constructor(
+        public Length = 0
+    ) { }
 }
