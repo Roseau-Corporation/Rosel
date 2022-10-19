@@ -1,6 +1,5 @@
 import { Node, NodeType } from "../../Utils"
-import { Literal } from "../Literals"
-import { Identifier } from "../Misc"
+import { Literal, Identifier } from "../Literals"
 
 export class VariableDeclaration<InitializersType extends Literal[]> extends Node {
     public Type: NodeType = NodeType.VariableDeclaration

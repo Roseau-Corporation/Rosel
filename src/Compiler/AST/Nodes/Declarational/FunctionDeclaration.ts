@@ -1,6 +1,5 @@
 import { Node, NodeType } from "../../Utils"
-import { Literal } from "../Literals"
-import { Identifier } from "../Misc"
+import { Literal, Identifier } from "../Literals"
 
 export class FunctionDeclaration<BodyType extends Node[]> extends Literal {
     public Type: NodeType = NodeType.FunctionDeclaration
