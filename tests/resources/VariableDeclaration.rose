@@ -1,0 +1,2 @@
+local My, Variable = "Hello", "World"
+local Your, Declaration = "Hey", "Programmer"

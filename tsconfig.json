@@ -10,11 +10,16 @@
     "moduleResolution": "node",
     "outDir": "dist/",
     "strict": true,
-    "target": "es5"
+    "declaration": true,
+    "target": "ESNext",
+    "resolveJsonModule": true
   },
   "include": [
-    "typings\\**\\*.d.ts",
-    "node_modules\\@*\\types-*\\*.d.ts",
     "src"
+  ],
+  "exclude": [
+    "./tests",
+    "./node_modules",
+    "./dist"
   ]
 }
